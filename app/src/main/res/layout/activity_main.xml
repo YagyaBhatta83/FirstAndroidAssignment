@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkin"
+        android:text="Check In Date"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkout"
+        android:text="Check Out Date"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/roomtype"-->
+<!--        android:text="Select Room Type"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:textSize="25sp"-->
+<!--        android:padding="10dp"/>-->
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Select Room Type"
+        android:id="@+id/roomtype"
+        android:textSize="25sp"
+        android:padding="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Adult"
+            android:inputType="number"
+            android:id="@+id/adult"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Children"
+            android:layout_weight="1"
+            android:id="@+id/children"
+            android:inputType="number"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/room"
+            android:inputType="number"
+            android:hint="Room"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:textSize="25sp"
+        android:id="@+id/btnCalculate"
+        android:layout_margin="20dp"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Grand Total : "
+        android:id="@+id/grandtotal"
+        android:layout_margin="20dp"
+        android:padding="10dp"/>
+
+</LinearLayout>
